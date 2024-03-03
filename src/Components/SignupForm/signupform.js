@@ -10,4 +10,8 @@ function SignupForm() {
   });
 }
 
+const handleChange = (e) => {
+  setUserData({...userData, [e.target.name]: e.target.value});
+}
+
 export default SignupForm;
